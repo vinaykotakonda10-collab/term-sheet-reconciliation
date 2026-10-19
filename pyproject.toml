@@ -1,0 +1,13 @@
+[project]
+name = "term-sheet-reconciliation"
+version = "1.0.0"
+description = "LLM-powered reconciliation of bond term sheets against booking-system extracts (Groq Cloud)."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+markers = [
+    "live: calls the real Groq API (requires GROQ_API_KEY and RUN_LIVE_TESTS=1)",
+]

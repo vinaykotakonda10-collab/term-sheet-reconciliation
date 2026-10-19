@@ -1,0 +1,27 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Original assignment pack (brief/guidelines are not part of the published solution;
+# the sample term sheets and booking extracts are published under data/)
+Source_docs/
+
+# Runtime artefacts that may contain document text or request metadata
+.cache/
+logs/
+outputs/tmp/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

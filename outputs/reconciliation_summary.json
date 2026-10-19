@@ -1,0 +1,680 @@
+{
+  "run": {
+    "tool_version": "1.0.0",
+    "started_at": "2026-10-19T15:02:48+00:00",
+    "finished_at": "2026-10-19T15:05:20+00:00",
+    "duration_seconds": 152.1,
+    "model": "openai/gpt-oss-20b",
+    "booking_format": "both",
+    "jobs": [
+      "IDBI Omni AT1 Bond 2014-15 Series II",
+      "Genel Energy Finance 4 Ltd 9.25% 2020/2025"
+    ],
+    "cache_enabled": false
+  },
+  "counts": {
+    "matches": 136,
+    "false_alerts": 0,
+    "true_mismatches": 15,
+    "parsing_errors": 0,
+    "unverifiable_fields": 39,
+    "unresolved": 0,
+    "failed_llm_calls": 0,
+    "total_field_comparisons": 190
+  },
+  "by_document": {
+    "IDBI_Omni_Term_Sheet.pdf": {
+      "Match": 53,
+      "False Alert": 0,
+      "True Mismatch": 13,
+      "Parsing Error": 0,
+      "Unverifiable": 29,
+      "Unresolved": 0
+    },
+    "Genel_Energy_Term_Sheet.pdf": {
+      "Match": 83,
+      "False Alert": 0,
+      "True Mismatch": 2,
+      "Parsing Error": 0,
+      "Unverifiable": 10,
+      "Unresolved": 0
+    }
+  },
+  "by_field": {
+    "ISIN": {
+      "Match": 5,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 5,
+      "Unresolved": 0
+    },
+    "Issuer": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "Parent": {
+      "Match": 5,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 5,
+      "Unresolved": 0
+    },
+    "Maturity": {
+      "Match": 4,
+      "False Alert": 0,
+      "True Mismatch": 6,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "Notional": {
+      "Match": 0,
+      "False Alert": 0,
+      "True Mismatch": 1,
+      "Parsing Error": 0,
+      "Unverifiable": 9,
+      "Unresolved": 0
+    },
+    "Coupon": {
+      "Match": 8,
+      "False Alert": 0,
+      "True Mismatch": 2,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "Currency": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "SettlementDate": {
+      "Match": 0,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 10,
+      "Unresolved": 0
+    },
+    "IssueDate": {
+      "Match": 9,
+      "False Alert": 0,
+      "True Mismatch": 1,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "IssueAmount": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "IssuePrice": {
+      "Match": 5,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 5,
+      "Unresolved": 0
+    },
+    "NominalAmountPerBond": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "InterestPaymentDate": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "InterestPaymentFrequency": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "DayCountFraction": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "BusinessDayConvention": {
+      "Match": 5,
+      "False Alert": 0,
+      "True Mismatch": 5,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "BusinessDayLocation": {
+      "Match": 5,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 5,
+      "Unresolved": 0
+    },
+    "AmortizationType": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    },
+    "MinimumSubscription": {
+      "Match": 10,
+      "False Alert": 0,
+      "True Mismatch": 0,
+      "Parsing Error": 0,
+      "Unverifiable": 0,
+      "Unresolved": 0
+    }
+  },
+  "by_trade": [
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "1",
+      "isin": "INE008A08U84",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 11,
+        "False Alert": 0,
+        "True Mismatch": 2,
+        "Parsing Error": 0,
+        "Unverifiable": 6,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Maturity",
+        "BusinessDayConvention"
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "2",
+      "isin": "INE008A08U84",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 10,
+        "False Alert": 0,
+        "True Mismatch": 3,
+        "Parsing Error": 0,
+        "Unverifiable": 6,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Maturity",
+        "Coupon",
+        "BusinessDayConvention"
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "3",
+      "isin": "INE008A08U84",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 11,
+        "False Alert": 0,
+        "True Mismatch": 3,
+        "Parsing Error": 0,
+        "Unverifiable": 5,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Maturity",
+        "Notional",
+        "BusinessDayConvention"
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "4",
+      "isin": "INE008A08U84",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 10,
+        "False Alert": 0,
+        "True Mismatch": 3,
+        "Parsing Error": 0,
+        "Unverifiable": 6,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Maturity",
+        "IssueDate",
+        "BusinessDayConvention"
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "5",
+      "isin": "INE008A08U84",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 11,
+        "False Alert": 0,
+        "True Mismatch": 2,
+        "Parsing Error": 0,
+        "Unverifiable": 6,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Maturity",
+        "BusinessDayConvention"
+      ]
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "1",
+      "isin": "NO0010894330",
+      "overall": "CLEAN",
+      "counts": {
+        "Match": 17,
+        "False Alert": 0,
+        "True Mismatch": 0,
+        "Parsing Error": 0,
+        "Unverifiable": 2,
+        "Unresolved": 0
+      },
+      "exceptions": []
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "2",
+      "isin": "NO0010894330",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 16,
+        "False Alert": 0,
+        "True Mismatch": 1,
+        "Parsing Error": 0,
+        "Unverifiable": 2,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Maturity"
+      ]
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "3",
+      "isin": "NO0010894330",
+      "overall": "CLEAN",
+      "counts": {
+        "Match": 17,
+        "False Alert": 0,
+        "True Mismatch": 0,
+        "Parsing Error": 0,
+        "Unverifiable": 2,
+        "Unresolved": 0
+      },
+      "exceptions": []
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "4",
+      "isin": "NO0010894330",
+      "overall": "BREAK",
+      "counts": {
+        "Match": 16,
+        "False Alert": 0,
+        "True Mismatch": 1,
+        "Parsing Error": 0,
+        "Unverifiable": 2,
+        "Unresolved": 0
+      },
+      "exceptions": [
+        "Coupon"
+      ]
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "5",
+      "isin": "NO0010894330",
+      "overall": "CLEAN",
+      "counts": {
+        "Match": 17,
+        "False Alert": 0,
+        "True Mismatch": 0,
+        "Parsing Error": 0,
+        "Unverifiable": 2,
+        "Unresolved": 0
+      },
+      "exceptions": []
+    }
+  ],
+  "exceptions": [
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "1",
+      "field": "Maturity",
+      "status": "True Mismatch",
+      "term_sheet_value": "PERPETUAL",
+      "booking_value": "2025-10-17",
+      "explanation": "The term sheet specifies the bond is perpetual, meaning it has no fixed maturity date, while the booking record contains a specific maturity date of 2025‑10‑17, which contradicts the perpetual nature described.",
+      "evidence_pages": [
+        1
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "1",
+      "field": "BusinessDayConvention",
+      "status": "True Mismatch",
+      "term_sheet_value": "Preceding for non‑coupon dates, next for coupon dates",
+      "booking_value": "Business day adjustment",
+      "explanation": "The term sheet specifies distinct conventions for non‑coupon and coupon dates, whereas the booking record only lists a generic \"Business day adjustment\" without distinguishing the two cases, indicating a mismatch in the economic terms.",
+      "evidence_pages": [
+        15
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "2",
+      "field": "Maturity",
+      "status": "True Mismatch",
+      "term_sheet_value": "PERPETUAL",
+      "booking_value": "2025-10-17",
+      "explanation": "The term sheet specifies the bond is perpetual, meaning it has no fixed maturity date, while the booking record contains a specific maturity date of 2025‑10‑17, which contradicts the perpetual nature described.",
+      "evidence_pages": [
+        1
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "2",
+      "field": "Coupon",
+      "status": "True Mismatch",
+      "term_sheet_value": "10.75",
+      "booking_value": "11.0",
+      "explanation": "The term sheet specifies a coupon of 10.75%, while the booking records a coupon of 11.0%, a difference of 0.25 percentage points that is not explained by any representational rule or adjustment.",
+      "evidence_pages": [
+        3
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "2",
+      "field": "BusinessDayConvention",
+      "status": "True Mismatch",
+      "term_sheet_value": "Preceding for non‑coupon dates, next for coupon dates",
+      "booking_value": "Business day adjustment",
+      "explanation": "The term sheet specifies distinct conventions for non‑coupon and coupon dates, whereas the booking record only lists a generic \"Business day adjustment\" without distinguishing the two cases, indicating a mismatch in the economic terms.",
+      "evidence_pages": [
+        15
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "3",
+      "field": "Maturity",
+      "status": "True Mismatch",
+      "term_sheet_value": "PERPETUAL",
+      "booking_value": "2025-10-17",
+      "explanation": "The term sheet specifies the bond is perpetual, meaning it has no fixed maturity date, while the booking record contains a specific maturity date of 2025‑10‑17, which contradicts the perpetual nature described.",
+      "evidence_pages": [
+        1
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "3",
+      "field": "Notional",
+      "status": "True Mismatch",
+      "term_sheet_value": "denomination 1000000",
+      "booking_value": "1100000",
+      "explanation": "The booking records a notional of 1,100,000, which is not a whole multiple of the bond denomination of 1,000,000 stated in the term sheet, violating the rule that a trade notional must be an integer number of bonds.",
+      "evidence_pages": [
+        3
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "3",
+      "field": "BusinessDayConvention",
+      "status": "True Mismatch",
+      "term_sheet_value": "Preceding for non‑coupon dates, next for coupon dates",
+      "booking_value": "Business day adjustment",
+      "explanation": "The term sheet specifies distinct conventions for non‑coupon and coupon dates, whereas the booking record only lists a generic \"Business day adjustment\" without distinguishing the two cases, indicating a mismatch in the economic terms.",
+      "evidence_pages": [
+        15
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "4",
+      "field": "Maturity",
+      "status": "True Mismatch",
+      "term_sheet_value": "PERPETUAL",
+      "booking_value": "2025-10-17",
+      "explanation": "The term sheet specifies the bond is perpetual, meaning it has no fixed maturity date, while the booking record contains a specific maturity date of 2025‑10‑17, which contradicts the perpetual nature described.",
+      "evidence_pages": [
+        1
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "4",
+      "field": "IssueDate",
+      "status": "True Mismatch",
+      "term_sheet_value": "2014-10-17",
+      "booking_value": "2014-10-10",
+      "explanation": "The term sheet specifies an Issue Date of 2014‑10‑17, while the booking record shows 2014‑10‑10, a 7‑day difference that cannot be explained by formatting, units, rounding or a business‑day convention.",
+      "evidence_pages": [
+        8
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "4",
+      "field": "BusinessDayConvention",
+      "status": "True Mismatch",
+      "term_sheet_value": "Preceding for non‑coupon dates, next for coupon dates",
+      "booking_value": "Business day adjustment",
+      "explanation": "The term sheet specifies distinct conventions for non‑coupon and coupon dates, whereas the booking record only lists a generic \"Business day adjustment\" without distinguishing the two cases, indicating a mismatch in the economic terms.",
+      "evidence_pages": [
+        15
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "5",
+      "field": "Maturity",
+      "status": "True Mismatch",
+      "term_sheet_value": "PERPETUAL",
+      "booking_value": "2025-10-17",
+      "explanation": "The term sheet specifies the bond is perpetual, meaning it has no fixed maturity date, while the booking record contains a specific maturity date of 2025‑10‑17, which contradicts the perpetual nature described.",
+      "evidence_pages": [
+        1
+      ]
+    },
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "trade_id": "5",
+      "field": "BusinessDayConvention",
+      "status": "True Mismatch",
+      "term_sheet_value": "Preceding for non‑coupon dates, next for coupon dates",
+      "booking_value": "Business day adjustment",
+      "explanation": "The term sheet specifies distinct conventions for non‑coupon and coupon dates, whereas the booking record only lists a generic \"Business day adjustment\" without distinguishing the two cases, indicating a mismatch in the economic terms.",
+      "evidence_pages": [
+        15
+      ]
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "2",
+      "field": "Maturity",
+      "status": "True Mismatch",
+      "term_sheet_value": "2025-10-14",
+      "booking_value": "2025-10-15",
+      "explanation": "The term sheet specifies a maturity date of 14 October 2025, while the booking record shows 15 October 2025, a one‑day discrepancy that is not justified by any rule or convention in the provided data.",
+      "evidence_pages": [
+        1
+      ]
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "trade_id": "4",
+      "field": "Coupon",
+      "status": "True Mismatch",
+      "term_sheet_value": "9.25",
+      "booking_value": "9.5",
+      "explanation": "The term sheet specifies a coupon rate of 9.25%, while the booking records a coupon of 9.5%. This is a substantive difference in the economic term, not a formatting or rounding issue.",
+      "evidence_pages": [
+        1
+      ]
+    }
+  ],
+  "extraction": [
+    {
+      "document": "IDBI_Omni_Term_Sheet.pdf",
+      "status": "OK",
+      "error": null,
+      "model": "openai/gpt-oss-20b",
+      "strategy": "keyword_excerpts",
+      "pages_sent": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "chars_sent": 12130,
+      "from_cache": false,
+      "llm_calls": 1,
+      "fields_extracted": 13,
+      "fields_not_in_document": [
+        "ISIN",
+        "Parent",
+        "Notional",
+        "SettlementDate",
+        "IssuePrice",
+        "BusinessDayLocation"
+      ],
+      "fields_with_parsing_errors": []
+    },
+    {
+      "document": "Genel_Energy_Term_Sheet.pdf",
+      "status": "OK",
+      "error": null,
+      "model": "openai/gpt-oss-20b",
+      "strategy": "keyword_excerpts",
+      "pages_sent": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "chars_sent": 12122,
+      "from_cache": false,
+      "llm_calls": 1,
+      "fields_extracted": 17,
+      "fields_not_in_document": [
+        "Notional",
+        "SettlementDate"
+      ],
+      "fields_with_parsing_errors": []
+    }
+  ],
+  "booking": [
+    {
+      "job": "IDBI Omni AT1 Bond 2014-15 Series II",
+      "source": "IDBI_Omni.json (parity-checked against IDBI_Omni.csv)",
+      "trades": 5,
+      "trade_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "warnings": [],
+      "parity": {
+        "csv_file": "IDBI_Omni.csv",
+        "json_file": "IDBI_Omni.json",
+        "consistent": true,
+        "only_in_csv": [],
+        "only_in_json": [],
+        "differences": []
+      }
+    },
+    {
+      "job": "Genel Energy Finance 4 Ltd 9.25% 2020/2025",
+      "source": "Genel_Energy.json (parity-checked against Genel_Energy.csv)",
+      "trades": 5,
+      "trade_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "warnings": [],
+      "parity": {
+        "csv_file": "Genel_Energy.csv",
+        "json_file": "Genel_Energy.json",
+        "consistent": true,
+        "only_in_csv": [],
+        "only_in_json": [],
+        "differences": []
+      }
+    }
+  ],
+  "job_failures": [],
+  "llm_usage": {
+    "model": "openai/gpt-oss-20b",
+    "extraction_calls": 2,
+    "adjudication_calls": 7,
+    "suspected_mismatches": 15,
+    "adjudications_reused": 8,
+    "adjudications_from_cache": 0,
+    "http_requests": 9,
+    "retries": 0,
+    "failed_requests": 0,
+    "unusable_responses": 0,
+    "failed_llm_calls": 0,
+    "prompt_tokens": 15581,
+    "completion_tokens": 4161,
+    "throttle_wait_seconds": 137.8,
+    "cache_hits": 0,
+    "failures": []
+  }
+}

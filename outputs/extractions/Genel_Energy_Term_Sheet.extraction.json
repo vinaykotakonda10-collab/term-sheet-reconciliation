@@ -1,0 +1,681 @@
+{
+  "document": "Genel_Energy_Term_Sheet.pdf",
+  "document_path": "C:\\Users\\raghu\\Downloads\\Assignment\\term-sheet-reconciliation\\data\\term_sheets\\Genel_Energy_Term_Sheet.pdf",
+  "sha256": "2312c5df0051330cdd8f87ed70262f23f7179808c07e3eb939294f9f72b1956e",
+  "file_type": "pdf",
+  "page_count": 13,
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "extraction-v3",
+  "schema_version": "1.0",
+  "extracted_at": "2026-10-19T15:03:45.705857+00:00",
+  "status": "OK",
+  "error": null,
+  "strategy": "keyword_excerpts",
+  "pages_sent": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+  ],
+  "chars_sent": 12122,
+  "field_coverage": {
+    "ISIN": true,
+    "Issuer": true,
+    "Parent": true,
+    "Maturity": true,
+    "Notional": false,
+    "Coupon": true,
+    "Currency": true,
+    "SettlementDate": true,
+    "IssueDate": true,
+    "IssueAmount": true,
+    "IssuePrice": true,
+    "NominalAmountPerBond": true,
+    "InterestPaymentDate": true,
+    "InterestPaymentFrequency": true,
+    "DayCountFraction": true,
+    "BusinessDayConvention": true,
+    "BusinessDayLocation": true,
+    "AmortizationType": true,
+    "MinimumSubscription": true
+  },
+  "llm_calls": 1,
+  "from_cache": false,
+  "repair_attempted": false,
+  "repaired_fields": [],
+  "fields": {
+    "ISIN": {
+      "field": "ISIN",
+      "status": "EXTRACTED",
+      "value": "NO0010894330",
+      "raw_value": "NO 0010894330",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "ISIN: NO 0010894330",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "NO0010894330",
+        "raw_value": "NO 0010894330",
+        "evidence": [
+          {
+            "quote": "ISIN: NO 0010894330",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Issuer": {
+      "field": "Issuer",
+      "status": "EXTRACTED",
+      "value": "Genel Energy Finance 4 Limited",
+      "raw_value": "Genel Energy Finance 4 Limited",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Issuer:  Genel Energy Finance 4 Limited",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "Genel Energy Finance 4 Limited",
+        "raw_value": "Genel Energy Finance 4 Limited",
+        "evidence": [
+          {
+            "quote": "Issuer:  Genel Energy Finance 4 Limited",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Parent": {
+      "field": "Parent",
+      "status": "EXTRACTED",
+      "value": "Genel Energy plc",
+      "raw_value": "Genel Energy plc",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Parent:  Genel Energy plc",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "Genel Energy plc",
+        "raw_value": "Genel Energy plc",
+        "evidence": [
+          {
+            "quote": "Parent:  Genel Energy plc",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Maturity": {
+      "field": "Maturity",
+      "status": "EXTRACTED",
+      "value": "2025-10-14",
+      "raw_value": "Expected to be 14 October 2025",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Maturity Date:  Expected to be 14 October 2025",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "2025-10-14",
+        "raw_value": "Expected to be 14 October 2025",
+        "evidence": [
+          {
+            "quote": "Maturity Date:  Expected to be 14 October 2025",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Notional": {
+      "field": "Notional",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "Not stated as a specific trade notional",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "Not stated as a specific trade notional"
+      }
+    },
+    "Coupon": {
+      "field": "Coupon",
+      "status": "EXTRACTED",
+      "value": "9.25",
+      "raw_value": "9.25% p.a.",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Coupon Rate:  9.25% p.a., semi-annual interest payments.",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 9.25,
+        "raw_value": "9.25% p.a.",
+        "evidence": [
+          {
+            "quote": "Coupon Rate:  9.25% p.a., semi-annual interest payments.",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Currency": {
+      "field": "Currency",
+      "status": "EXTRACTED",
+      "value": "USD",
+      "raw_value": "USD",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Currency:  USD",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "USD",
+        "raw_value": "USD",
+        "evidence": [
+          {
+            "quote": "Currency:  USD",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "SettlementDate": {
+      "field": "SettlementDate",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "No settlement date specified",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "No settlement date specified"
+      }
+    },
+    "IssueDate": {
+      "field": "IssueDate",
+      "status": "EXTRACTED",
+      "value": "2020-10-14",
+      "raw_value": "Expected to be 14 October 2020",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Issue Date: Expected to be 14 October 2020",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "2020-10-14",
+        "raw_value": "Expected to be 14 October 2020",
+        "evidence": [
+          {
+            "quote": "Issue Date: Expected to be 14 October 2020",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "IssueAmount": {
+      "field": "IssueAmount",
+      "status": "EXTRACTED",
+      "value": "300000000",
+      "raw_value": "USD 300,000,000",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Issue Amount:  USD 300,000,000",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 300000000,
+        "raw_value": "USD 300,000,000",
+        "evidence": [
+          {
+            "quote": "Issue Amount:  USD 300,000,000",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "IssuePrice": {
+      "field": "IssuePrice",
+      "status": "EXTRACTED",
+      "value": "97",
+      "raw_value": "97% of the Nominal Amount",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Issue Price:  97% of the Nominal Amount.",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 97,
+        "raw_value": "97% of the Nominal Amount",
+        "evidence": [
+          {
+            "quote": "Issue Price:  97% of the Nominal Amount.",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "NominalAmountPerBond": {
+      "field": "NominalAmountPerBond",
+      "status": "EXTRACTED",
+      "value": "2000",
+      "raw_value": "USD 2,000",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Nominal Amount:  The Bonds will have a nominal amount of USD 2,000 each.",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 2000,
+        "raw_value": "USD 2,000",
+        "evidence": [
+          {
+            "quote": "Nominal Amount:  The Bonds will have a nominal amount of USD 2,000 each.",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "InterestPaymentDate": {
+      "field": "InterestPaymentDate",
+      "status": "EXTRACTED",
+      "value": "2021-04-14",
+      "raw_value": "Expected to be 14 April 2021",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "First Interest Payment  Expected to be 14 April 2021",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "2021-04-14",
+        "raw_value": "Expected to be 14 April 2021",
+        "evidence": [
+          {
+            "quote": "First Interest Payment  Expected to be 14 April 2021",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "InterestPaymentFrequency": {
+      "field": "InterestPaymentFrequency",
+      "status": "EXTRACTED",
+      "value": "Semi-annual",
+      "raw_value": "semi-annual interest payments",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Coupon Rate:  9.25% p.a., semi-annual interest payments.",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "Semi-annual",
+        "raw_value": "semi-annual interest payments",
+        "evidence": [
+          {
+            "quote": "Coupon Rate:  9.25% p.a., semi-annual interest payments.",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "DayCountFraction": {
+      "field": "DayCountFraction",
+      "status": "EXTRACTED",
+      "value": "30/360",
+      "raw_value": "30/360",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Day-count fraction for coupon is “30/360”",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "30/360",
+        "raw_value": "30/360",
+        "evidence": [
+          {
+            "quote": "Day-count fraction for coupon is “30/360”",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "BusinessDayConvention": {
+      "field": "BusinessDayConvention",
+      "status": "EXTRACTED",
+      "value": "Unadjusted",
+      "raw_value": "unadjusted",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "business day convention is “unadjusted”",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "Unadjusted",
+        "raw_value": "unadjusted",
+        "evidence": [
+          {
+            "quote": "business day convention is “unadjusted”",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "BusinessDayLocation": {
+      "field": "BusinessDayLocation",
+      "status": "EXTRACTED",
+      "value": [
+        "Oslo",
+        "New York"
+      ],
+      "raw_value": "Oslo and New York",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "business day is “Oslo” and “New York”",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "raw_value is not a substring of the quoted evidence"
+      ],
+      "llm_output": {
+        "value": [
+          "Oslo",
+          "New York"
+        ],
+        "raw_value": "Oslo and New York",
+        "evidence": [
+          {
+            "quote": "business day is “Oslo” and “New York”",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "AmortizationType": {
+      "field": "AmortizationType",
+      "status": "EXTRACTED",
+      "value": "Bullet",
+      "raw_value": "repay in full at the Maturity Date",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Amortization:  The Bonds shall be repaid in full at the Maturity Date at 100% of the Nominal Amount",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "raw_value is not a substring of the quoted evidence"
+      ],
+      "llm_output": {
+        "value": "Bullet",
+        "raw_value": "repay in full at the Maturity Date",
+        "evidence": [
+          {
+            "quote": "Amortization:  The Bonds shall be repaid in full at the Maturity Date at 100% of the Nominal Amount",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "MinimumSubscription": {
+      "field": "MinimumSubscription",
+      "status": "EXTRACTED",
+      "value": "200000",
+      "raw_value": "USD 200,000",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Minimum Subscription:  Minimum subscription and allotment amount shall be USD 200,000",
+          "claimed_page": 2,
+          "page": 2,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 200000,
+        "raw_value": "USD 200,000",
+        "evidence": [
+          {
+            "quote": "Minimum Subscription:  Minimum subscription and allotment amount shall be USD 200,000",
+            "page": 2
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    }
+  }
+}

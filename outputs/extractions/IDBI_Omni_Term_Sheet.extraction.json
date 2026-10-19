@@ -1,0 +1,643 @@
+{
+  "document": "IDBI_Omni_Term_Sheet.pdf",
+  "document_path": "C:\\Users\\raghu\\Downloads\\Assignment\\term-sheet-reconciliation\\data\\term_sheets\\IDBI_Omni_Term_Sheet.pdf",
+  "sha256": "e596dfbf45d8f809308ea0cdc7280f0a4d10e8110cc3e545cee1b9e4f76e2567",
+  "file_type": "pdf",
+  "page_count": 16,
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "extraction-v3",
+  "schema_version": "1.0",
+  "extracted_at": "2026-10-19T15:02:50.358454+00:00",
+  "status": "OK",
+  "error": null,
+  "strategy": "keyword_excerpts",
+  "pages_sent": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "chars_sent": 12130,
+  "field_coverage": {
+    "ISIN": false,
+    "Issuer": true,
+    "Parent": false,
+    "Maturity": true,
+    "Notional": false,
+    "Coupon": true,
+    "Currency": true,
+    "SettlementDate": true,
+    "IssueDate": true,
+    "IssueAmount": true,
+    "IssuePrice": false,
+    "NominalAmountPerBond": true,
+    "InterestPaymentDate": true,
+    "InterestPaymentFrequency": true,
+    "DayCountFraction": true,
+    "BusinessDayConvention": true,
+    "BusinessDayLocation": true,
+    "AmortizationType": true,
+    "MinimumSubscription": true
+  },
+  "llm_calls": 1,
+  "from_cache": false,
+  "repair_attempted": false,
+  "repaired_fields": [],
+  "fields": {
+    "ISIN": {
+      "field": "ISIN",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "ISIN not stated",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "ISIN not stated"
+      }
+    },
+    "Issuer": {
+      "field": "Issuer",
+      "status": "EXTRACTED",
+      "value": "IDBI Bank Limited",
+      "raw_value": "IDBI Bank Limited",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Issuer  IDBI Bank Limited",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "IDBI Bank Limited",
+        "raw_value": "IDBI Bank Limited",
+        "evidence": [
+          {
+            "quote": "Issuer  IDBI Bank Limited",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Parent": {
+      "field": "Parent",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "No parent named",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "No parent named"
+      }
+    },
+    "Maturity": {
+      "field": "Maturity",
+      "status": "EXTRACTED",
+      "value": "PERPETUAL",
+      "raw_value": "perpetual",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "perpetual bonds",
+          "claimed_page": 5,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "LLM cited page 5; quote found on page 1"
+      ],
+      "llm_output": {
+        "value": "PERPETUAL",
+        "raw_value": "perpetual",
+        "evidence": [
+          {
+            "quote": "perpetual bonds",
+            "page": 5
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Notional": {
+      "field": "Notional",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "Notional of a specific trade not stated",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "Notional of a specific trade not stated"
+      }
+    },
+    "Coupon": {
+      "field": "Coupon",
+      "status": "EXTRACTED",
+      "value": "10.75",
+      "raw_value": "10.75% p.a.",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Coupon Rate  10.75% p.a.",
+          "claimed_page": 15,
+          "page": 3,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "LLM cited page 15; quote found on page 3"
+      ],
+      "llm_output": {
+        "value": 10.75,
+        "raw_value": "10.75% p.a.",
+        "evidence": [
+          {
+            "quote": "Coupon Rate  10.75% p.a.",
+            "page": 15
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "Currency": {
+      "field": "Currency",
+      "status": "EXTRACTED",
+      "value": "INR",
+      "raw_value": "Rs.",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Face Value  Rs.10,00,000/-",
+          "claimed_page": 3,
+          "page": 3,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        },
+        {
+          "quote": "Minimum Application and  5 Bonds",
+          "claimed_page": 8,
+          "page": 8,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "INR",
+        "raw_value": "Rs.",
+        "evidence": [
+          {
+            "quote": "Face Value  Rs.10,00,000/-",
+            "page": 3
+          },
+          {
+            "quote": "Minimum Application and  5 Bonds",
+            "page": 8
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "SettlementDate": {
+      "field": "SettlementDate",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "Only a date range given",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "Only a date range given"
+      }
+    },
+    "IssueDate": {
+      "field": "IssueDate",
+      "status": "EXTRACTED",
+      "value": "2014-10-17",
+      "raw_value": "October 17, 2014",
+      "basis": "stated",
+      "note": "Deemed Date of Allotment used as Issue Date",
+      "evidence": [
+        {
+          "quote": "Deemed  Date  of  October 17, 2014",
+          "claimed_page": 8,
+          "page": 8,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "2014-10-17",
+        "raw_value": "October 17, 2014",
+        "evidence": [
+          {
+            "quote": "Deemed  Date  of  October 17, 2014",
+            "page": 8
+          }
+        ],
+        "basis": "stated",
+        "note": "Deemed Date of Allotment used as Issue Date"
+      }
+    },
+    "IssueAmount": {
+      "field": "IssueAmount",
+      "status": "EXTRACTED",
+      "value": "15000000000",
+      "raw_value": "Rs.1,500 Crores",
+      "basis": "stated",
+      "note": "Option to retain over‑subscription of Rs.1,000 Crores not included",
+      "evidence": [
+        {
+          "quote": "Issue  Size and Option  to  Rs.1,500 Crores",
+          "claimed_page": 1,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 15000000000,
+        "raw_value": "Rs.1,500 Crores",
+        "evidence": [
+          {
+            "quote": "Issue  Size and Option  to  Rs.1,500 Crores",
+            "page": 1
+          }
+        ],
+        "basis": "stated",
+        "note": "Option to retain over‑subscription of Rs.1,000 Crores not included"
+      }
+    },
+    "IssuePrice": {
+      "field": "IssuePrice",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "Issue price not stated",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "Issue price not stated"
+      }
+    },
+    "NominalAmountPerBond": {
+      "field": "NominalAmountPerBond",
+      "status": "EXTRACTED",
+      "value": "1000000",
+      "raw_value": "Rs.10,00,000/-",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Face Value  Rs.10,00,000/- (Rupees Ten Lakh) per Bond.",
+          "claimed_page": 3,
+          "page": 3,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "GROUNDED",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 1000000,
+        "raw_value": "Rs.10,00,000/-",
+        "evidence": [
+          {
+            "quote": "Face Value  Rs.10,00,000/- (Rupees Ten Lakh) per Bond.",
+            "page": 3
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "InterestPaymentDate": {
+      "field": "InterestPaymentDate",
+      "status": "EXTRACTED",
+      "value": "2015-10-17",
+      "raw_value": "On the anniversary of the Deemed Date of Allotment",
+      "basis": "derived",
+      "note": "Derived from Deemed Date of Allotment 2014-10-17",
+      "evidence": [
+        {
+          "quote": "Coupon Payment Dates  On the anniversary of the Deemed Date of Allotment.",
+          "claimed_page": 15,
+          "page": 3,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "LLM cited page 15; quote found on page 3"
+      ],
+      "llm_output": {
+        "value": "2015-10-17",
+        "raw_value": "On the anniversary of the Deemed Date of Allotment",
+        "evidence": [
+          {
+            "quote": "Coupon Payment Dates  On the anniversary of the Deemed Date of Allotment.",
+            "page": 15
+          }
+        ],
+        "basis": "derived",
+        "note": "Derived from Deemed Date of Allotment 2014-10-17"
+      }
+    },
+    "InterestPaymentFrequency": {
+      "field": "InterestPaymentFrequency",
+      "status": "EXTRACTED",
+      "value": "Annual",
+      "raw_value": "annually in arrear",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "coupon will be payable annually in arrear.",
+          "claimed_page": 15,
+          "page": 3,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "LLM cited page 15; quote found on page 3"
+      ],
+      "llm_output": {
+        "value": "Annual",
+        "raw_value": "annually in arrear",
+        "evidence": [
+          {
+            "quote": "coupon will be payable annually in arrear.",
+            "page": 15
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "DayCountFraction": {
+      "field": "DayCountFraction",
+      "status": "EXTRACTED",
+      "value": "Actual/Actual",
+      "raw_value": "Actual/Actual",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Interest on application money will be computed as per Actual/Actual Day count convention.",
+          "claimed_page": 4,
+          "page": 4,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": "Actual/Actual",
+        "raw_value": "Actual/Actual",
+        "evidence": [
+          {
+            "quote": "Interest on application money will be computed as per Actual/Actual Day count convention.",
+            "page": 4
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "BusinessDayConvention": {
+      "field": "BusinessDayConvention",
+      "status": "EXTRACTED",
+      "value": "Preceding for non‑coupon dates, next for coupon dates",
+      "raw_value": "Preceding for non‑coupon dates, next for coupon dates",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "Should any of the dates, other than the Coupon Payment Date including  the Deemed Date of Allotment, Issuer Call Date, Tax Call Date or Regulatory  Call Date as defined in this Information Memorandum, fall on day which is not a business day, the immediately preceding business day shall be considered as the effective date.  Should  the Coupon Payment  Date,  as defined in this Disclosure Document, fall on day which is not a business day, the immediately next business day shall be considered as the effective date.",
+          "claimed_page": 15,
+          "page": 15,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "raw_value is not a substring of the quoted evidence"
+      ],
+      "llm_output": {
+        "value": "Preceding for non‑coupon dates, next for coupon dates",
+        "raw_value": "Preceding for non‑coupon dates, next for coupon dates",
+        "evidence": [
+          {
+            "quote": "Should any of the dates, other than the Coupon Payment Date including  the Deemed Date of Allotment, Issuer Call Date, Tax Call Date or Regulatory  Call Date as defined in this Information Memorandum, fall on day which is not a business day, the immediately preceding business day shall be considered as the effective date.  Should  the Coupon Payment  Date,  as defined in this Disclosure Document, fall on day which is not a business day, the immediately next business day shall be considered as the effective date.",
+            "page": 15
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "BusinessDayLocation": {
+      "field": "BusinessDayLocation",
+      "status": "NOT_IN_DOCUMENT",
+      "value": null,
+      "raw_value": null,
+      "basis": null,
+      "note": "No business‑day locations specified",
+      "evidence": [],
+      "grounding": null,
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": null,
+        "raw_value": null,
+        "evidence": [],
+        "basis": null,
+        "note": "No business‑day locations specified"
+      }
+    },
+    "AmortizationType": {
+      "field": "AmortizationType",
+      "status": "EXTRACTED",
+      "value": "Perpetual",
+      "raw_value": "perpetual",
+      "basis": "stated",
+      "note": null,
+      "evidence": [
+        {
+          "quote": "perpetual bonds",
+          "claimed_page": 5,
+          "page": 1,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [
+        "LLM cited page 5; quote found on page 1"
+      ],
+      "llm_output": {
+        "value": "Perpetual",
+        "raw_value": "perpetual",
+        "evidence": [
+          {
+            "quote": "perpetual bonds",
+            "page": 5
+          }
+        ],
+        "basis": "stated",
+        "note": null
+      }
+    },
+    "MinimumSubscription": {
+      "field": "MinimumSubscription",
+      "status": "EXTRACTED",
+      "value": "5000000",
+      "raw_value": "5 Bonds",
+      "basis": "derived",
+      "note": "Derived by multiplying 5 bonds by nominal amount per bond",
+      "evidence": [
+        {
+          "quote": "Minimum Application and  5 Bonds",
+          "claimed_page": 8,
+          "page": 8,
+          "verified": true,
+          "match_type": "normalized",
+          "text_view": "layout"
+        }
+      ],
+      "grounding": "NOT_APPLICABLE",
+      "error_type": null,
+      "errors": [],
+      "warnings": [],
+      "llm_output": {
+        "value": 5000000,
+        "raw_value": "5 Bonds",
+        "evidence": [
+          {
+            "quote": "Minimum Application and  5 Bonds",
+            "page": 8
+          }
+        ],
+        "basis": "derived",
+        "note": "Derived by multiplying 5 bonds by nominal amount per bond"
+      }
+    }
+  }
+}

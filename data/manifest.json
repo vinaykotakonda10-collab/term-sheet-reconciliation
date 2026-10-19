@@ -1,0 +1,17 @@
+{
+  "description": "Reconciliation jobs: each term sheet is reconciled against its booking-system extracts. Paths are relative to this file.",
+  "jobs": [
+    {
+      "name": "IDBI Omni AT1 Bond 2014-15 Series II",
+      "term_sheet": "term_sheets/IDBI_Omni_Term_Sheet.pdf",
+      "booking_csv": "booking/IDBI_Omni.csv",
+      "booking_json": "booking/IDBI_Omni.json"
+    },
+    {
+      "name": "Genel Energy Finance 4 Ltd 9.25% 2020/2025",
+      "term_sheet": "term_sheets/Genel_Energy_Term_Sheet.pdf",
+      "booking_csv": "booking/Genel_Energy.csv",
+      "booking_json": "booking/Genel_Energy.json"
+    }
+  ]
+}
